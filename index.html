@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenab Waqi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/assets/gemini-svg.svg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "URaLON_8OTzDkIS1D",
+      });
+   })();
+</script>
+
+
+</head>
+
+<body>
+  <section id="landing-page" onmousemove="moveBackground(event)">
+    <nav>
+      <figure>
+        <img id="personal-logo" src="./assets/gemini-svg.svg" alt="">
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Projects</a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Contact</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          "><i class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="title">Hey</h1>
+        <h1 class="title orange">I'm Zenab.</h1>
+        <p class="header__para">
+          I'm a <b class="orange">Frontend Web Developer</b> with a passion for building user-centric
+          applications and delivering seamless digital experiences.
+          <br>
+          Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
+        </p>
+        <div class="social__list">
+          <a href="https://www.linkedin.com/in/zenab-waqi" target="_blank" class="social__link click">
+            <!-- <i class="fab fa-linkedin-in"></i> -->
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/zeevaki" target="_blank" class="social__link click">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="./assets/Zenab_Waqi_Resume.pdf" target="_blank" class="social__link click">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+        </div>
+        <a href="./assets/Zenab_Waqi_Resume.pdf" target="_blank" class="resume__cta click">
+          <i class="fas fa-file-download"></i>
+          Download Resume
+        </a>
+      </div>
+    </header>
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">Frontend Web Developer.</h4>
+        <p class="modal__para">
+          Analytical and detail-oriented <b class="orange">Frontend Web Developer</b> with a background in
+          Information Technology and expertise in mathematical logic and instructional design. Proven track record
+          of building user-centric applications, managing technical deployments, and scaling digital communities
+          to over <b class="orange">80,000+ active followers</b>.
+        </p>
+        <div class="modal__languages">
+        
+          <figure class="modal__language">
+  <img class="modal__language--img"
+       src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+       alt="HTML5 Badge">              
+  <span class="language__name">HTML</span>
+</figure>
+
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt="">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+              alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+    
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+              alt="">
+            <span class="language__name">React</span>
+          </figure>
+
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+              alt="">
+            <span class="language__name">Node.js</span>
+          </figure>
+
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg"
+              alt="">
+            <span class="language__name">Firebase</span>
+          </figure>
+
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">
+          I'm currently open to new opportunities.
+        </h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it my way
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking to you soon.
+        </div>
+      </div>
+    </div>
+    <img src="./assets/semi circle.svg" class="shape shape--0">
+    <img src="./assets/circle.svg" class="shape shape--1">
+    <img src="./assets/squiggly.svg" class="shape shape--2">
+    <img src="./assets/circle.svg" class="shape shape--3">
+    <img src="./assets/triangle.svg" class="shape shape--4">
+    <img src="./assets/circle.svg" class="shape shape--5">
+    <img src="./assets/squiggly.svg" class="shape shape--6">
+    <img src="./assets/circle.svg" class="shape shape--7">
+    <img src="./assets/semi circle.svg" class="shape shape--8">
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          Here are some of my <span class="orange">projects</span>
+        </h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/skinstric mockup.png" class="project__img" alt="Skinstric">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">Skinstric</h3>
+                <div class="project__description--tags">
+                  <span class="project__description--tag">React</span>
+                  <span class="project__description--tag">Next.js</span>
+                  <span class="project__description--tag">CSS</span>
+                  <span class="project__description--tag">AI</span>
+                </div>
+                <p class="project__description--para">
+                  An AI-powered skincare personalization platform that analyzes individual skin needs and
+                  generates a highly tailored routine. Features a sleek, interactive UI with a guided
+                  skin assessment flow.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://skinstric-rouge.vercel.app/" target="_blank" class="project__description--link" title="Live Site">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/summerbooks mockup.png" class="project__img" alt="Summarist">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">Summarist</h3>
+                <div class="project__description--tags">
+                  <span class="project__description--tag">React</span>
+                  <span class="project__description--tag">Next.js</span>
+                  <span class="project__description--tag">CSS</span>
+                </div>
+                <p class="project__description--para">
+                  A book summary platform that lets users read or listen to condensed versions of popular titles.
+                  Features personalized recommendations, audio briefcasts, and a clean cross-platform reading experience.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://summerbooks.vercel.app/" target="_blank" class="project__description--link" title="Live Site">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/ultraverse mockup.png" class="project__img" alt="Ultraverse">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">Ultraverse</h3>
+                <div class="project__description--tags">
+                  <span class="project__description--tag">React</span>
+                  <span class="project__description--tag">Next.js</span>
+                  <span class="project__description--tag">CSS</span>
+                </div>
+                <p class="project__description--para">
+                  A modern NFT marketplace with a sleek, responsive interface. Browse trending collections,
+                  explore top creators, and discover digital assets through a polished and intuitive UI.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://zenab-insternship-vwo5.vercel.app/" target="_blank" class="project__description--link" title="Live Site">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/library mockup.png" class="project__img" alt="React Library">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">Library</h3>
+                <div class="project__description--tags">
+                  <span class="project__description--tag">React</span>
+                  <span class="project__description--tag">CSS</span>
+                  <span class="project__description--tag">JavaScript</span>
+                </div>
+                <p class="project__description--para">
+                  A React-powered digital library application for browsing, organizing, and discovering books.
+                  Built with a clean, intuitive interface and a strong focus on responsive design.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://react-library-blush.vercel.app/" target="_blank" class="project__description--link" title="Live Site">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/urdu poetry mockup.png" class="project__img" alt="Urdu Poetry">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">Urdu Poetry</h3>
+                <div class="project__description--tags">
+                  <span class="project__description--tag">React</span>
+                  <span class="project__description--tag">CSS</span>
+                  <span class="project__description--tag">JavaScript</span>
+                </div>
+                <p class="project__description--para">
+                  A digital platform celebrating Urdu literary and musical traditions. Browse curated
+                  collections of poetry books, classical ghazals, and devotional qawalis in a clean,
+                  elegant interface.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://urdu-poetry-nu.vercel.app/" target="_blank" class="project__description--link" title="Live Site">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="./assets/gemini-svg.svg" class="footer__logo--img" alt="">
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a href="https://github.com/zeevaki" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        " target="_blank">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/zenab-waqi" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            LinkedIn
+          </a>
+          <a href="#" onclick="toggleModal()" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Contact
+          </a>
+          <a href="./assets/Zenab_Waqi_Resume.pdf" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Resume
+          </a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2026  Zenab Waqi</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenab Waqi — Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', serif;
+      font-size: 13px;
+      color: #1a1a1a;
+      background: #fff;
+      max-width: 820px;
+      margin: 40px auto;
+      padding: 0 40px 60px;
+      line-height: 1.5;
+    }
+
+    /* HEADER */
+    .resume__header {
+      text-align: center;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #1a1a1a;
+    }
+
+    .resume__name {
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .resume__contact {
+      font-size: 12px;
+      color: #444;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px 16px;
+    }
+
+    .resume__contact a {
+      color: #b04a2e;
+      text-decoration: none;
+    }
+
+    /* SECTIONS */
+    .section {
+      margin-bottom: 22px;
+    }
+
+    .section__title {
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-bottom: 1.5px solid #1a1a1a;
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+    }
+
+    /* SUMMARY */
+    .summary p {
+      line-height: 1.7;
+    }
+
+    /* SKILLS */
+    .skills__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .skills__list li span {
+      font-weight: bold;
+    }
+
+    /* PROJECTS */
+    .project {
+      margin-bottom: 14px;
+    }
+
+    .project__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .project__name {
+      font-weight: bold;
+      color: #b04a2e;
+      font-size: 13px;
+    }
+
+    .project__link {
+      color: #b04a2e;
+      font-size: 11px;
+      text-decoration: none;
+    }
+
+    .project__stack {
+      font-style: italic;
+      color: #555;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .project__bullets {
+      list-style: disc;
+      padding-left: 18px;
+    }
+
+    .project__bullets li {
+      margin-bottom: 3px;
+    }
+
+    /* EXPERIENCE */
+    .job {
+      margin-bottom: 14px;
+    }
+
+    .job__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .job__title {
+      font-weight: bold;
+      color: #b04a2e;
+    }
+
+    .job__dates {
+      font-size: 12px;
+      color: #555;
+      font-style: italic;
+    }
+
+    .job__company {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 4px;
+    }
+
+    .job__bullets {
+      list-style: disc;
+      padding-left: 18px;
+    }
+
+    .job__bullets li {
+      margin-bottom: 3px;
+    }
+
+    /* EDUCATION */
+    .edu__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+
+    .edu__degree { font-weight: bold; }
+    .edu__school { font-style: italic; color: #555; }
+
+    /* ACHIEVEMENTS */
+    .achievements__list {
+      list-style: disc;
+      padding-left: 18px;
+    }
+
+    .achievements__list li {
+      margin-bottom: 4px;
+    }
+
+    @media print {
+      body { margin: 0; padding: 20px 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="resume__header">
+    <h1 class="resume__name">Zenab Waqi</h1>
+    <div class="resume__contact">
+      <span>Dallas, Texas</span>
+      <span>469-766-1216</span>
+      <a href="mailto:zeevaki@gmail.com">zeevaki@gmail.com</a>
+      <a href="https://www.linkedin.com/in/zenab-waqi" target="_blank">linkedin.com/in/zenab-waqi</a>
+      <a href="https://github.com/zeevaki" target="_blank">github.com/zeevaki</a>
+    </div>
+  </header>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <section class="section summary">
+    <h2 class="section__title">Professional Summary</h2>
+    <p>
+      Analytical and detail-oriented <strong>Frontend Web Developer</strong> with a foundational background in
+      Information Technology and advanced expertise in mathematical logic and instructional design. Proven track
+      record of building user-centric applications, managing technical deployments, and scaling digital communities
+      to over 80,000 active followers. Adept at breaking down complex architectures, writing clean code, and
+      collaborating across diverse teams. Seeking a remote Frontend Developer position to leverage strong
+      problem-solving capabilities and modern web technologies.
+    </p>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section class="section">
+    <h2 class="section__title">Technical Skills</h2>
+    <ul class="skills__list">
+      <li><span>Languages:</span> JavaScript (ES6+), HTML5, CSS3</li>
+      <li><span>Frameworks &amp; Libraries:</span> React.js, Next.js, Node.js</li>
+      <li><span>Databases &amp; Tools:</span> Firebase/Firestore, Git, GitHub, VS Code</li>
+      <li><span>Core Competencies:</span> Frontend Web Development, UI/UX Design Optimization, Responsive Design, Agile Methodologies</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section">
+    <h2 class="section__title">Technical Projects</h2>
+
+    <div class="project">
+      <div class="project__header">
+        <span class="project__name">Skinstric</span>
+        <a class="project__link" href="https://skinstric-rouge.vercel.app/" target="_blank">skinstric-rouge.vercel.app</a>
+      </div>
+      <p class="project__stack">React, Next.js, CSS, AI Integration</p>
+      <ul class="project__bullets">
+        <li>Built an AI-powered skincare personalization platform that analyzes individual skin needs and generates tailored routines.</li>
+        <li>Designed an interactive guided assessment flow with a polished, responsive UI optimized for cross-device compatibility.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project__header">
+        <span class="project__name">Summarist</span>
+        <a class="project__link" href="https://summerbooks.vercel.app/" target="_blank">summerbooks.vercel.app</a>
+      </div>
+      <p class="project__stack">React, Next.js, CSS</p>
+      <ul class="project__bullets">
+        <li>Developed a book summary platform allowing users to read or listen to condensed versions of popular titles.</li>
+        <li>Integrated personalized book recommendations and audio briefcasts with a clean, accessible reading interface.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project__header">
+        <span class="project__name">Ultraverse</span>
+        <a class="project__link" href="https://zenab-insternship-vwo5.vercel.app/" target="_blank">zenab-insternship-vwo5.vercel.app</a>
+      </div>
+      <p class="project__stack">React, Next.js, CSS</p>
+      <ul class="project__bullets">
+        <li>Designed and deployed a modern NFT marketplace featuring trending collections and top creator profiles.</li>
+        <li>Implemented a fully responsive layout with smooth navigation and an intuitive browsing experience.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project__header">
+        <span class="project__name">Library</span>
+        <a class="project__link" href="https://react-library-blush.vercel.app/" target="_blank">react-library-blush.vercel.app</a>
+      </div>
+      <p class="project__stack">React, JavaScript, CSS</p>
+      <ul class="project__bullets">
+        <li>Built a React-powered digital library application for browsing and organizing book collections.</li>
+        <li>Focused on clean component architecture and a fully responsive, user-friendly interface.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project__header">
+        <span class="project__name">Urdu Poetry</span>
+        <a class="project__link" href="https://urdu-poetry-nu.vercel.app/" target="_blank">urdu-poetry-nu.vercel.app</a>
+      </div>
+      <p class="project__stack">React, JavaScript, CSS</p>
+      <ul class="project__bullets">
+        <li>Created a digital platform preserving and showcasing Urdu literary and musical heritage including poetry, ghazals, and qawalis.</li>
+        <li>Delivered an elegant, content-rich interface optimized for readability and cultural engagement.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <section class="section">
+    <h2 class="section__title">Professional Experience</h2>
+
+    <div class="job">
+      <div class="job__header">
+        <span class="job__title">Elementary School Mathematics Educator (5th Grade)</span>
+        <span class="job__dates">02/2022 – Present</span>
+      </div>
+      <p class="job__company">Dallas Independent School District — Dallas, Texas</p>
+      <ul class="job__bullets">
+        <li>Programmed and deployed interactive, web-based gamified mathematics modules to supplement core curriculum, driving up student engagement metrics.</li>
+        <li>Utilized data-driven assessment strategies to analyze performance metrics and tailor learning pathways based on individual data trends.</li>
+        <li>Successfully secured external crowd-sourced funding via DonorsChoose to procure critical STEM learning manipulatives and logic-building tools.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__header">
+        <span class="job__title">After-School &amp; Summer School Coordinator</span>
+        <span class="job__dates">09/2024 – 06/2025</span>
+      </div>
+      <p class="job__company">Dallas Independent School District — Dallas, Texas</p>
+      <ul class="job__bullets">
+        <li>Managed end-to-end program logistics, operational workflows, and stakeholder communication for regional STEM experiential learning events.</li>
+        <li>Coordinated schedules, technical resource allocation, and curriculum deployment across multiple concurrent instructional paths.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__header">
+        <span class="job__title">QA Lead</span>
+        <span class="job__dates">2013 (7 months)</span>
+      </div>
+      <p class="job__company">CureMD — International Healthcare Software House</p>
+      <ul class="job__bullets">
+        <li>Led quality assurance processes for a reputable international healthcare software company, overseeing end-to-end testing of enterprise-level applications.</li>
+        <li>Coordinated with cross-functional development teams to identify, document, and resolve software defects, ensuring high product quality standards.</li>
+        <li>Developed and executed comprehensive test plans, test cases, and regression suites across multiple concurrent software releases.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__header">
+        <span class="job__title">High School Math Teacher</span>
+        <span class="job__dates">09/2006 – 08/2007</span>
+      </div>
+      <p class="job__company">Saudia Academy — Dallas, Texas</p>
+      <ul class="job__bullets">
+        <li>Instructed advanced algebraic structures, geometric logic, and computational problem-solving frameworks.</li>
+        <li>Collaborated with a multidisciplinary peer team to align curriculum standards and design structured data-driven assessment metrics.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__header">
+        <span class="job__title">Digital Content Creator &amp; Community Manager</span>
+        <span class="job__dates">Ongoing</span>
+      </div>
+      <p class="job__company">Instagram &amp; Facebook</p>
+      <ul class="job__bullets">
+        <li>Built and independently manage cross-platform online communities scaling to 80,000+ followers focused on cultural literature and lifestyle.</li>
+        <li>Analyze platform metrics, audience engagement data, and algorithmic trends to optimize content delivery and user retention.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section">
+    <h2 class="section__title">Education &amp; Certifications</h2>
+    <div class="edu__item">
+      <span class="edu__degree">Master of Education in Curriculum &amp; Instruction (Mathematics Education)</span>
+      <span class="edu__school">Southeastern Oklahoma State University</span>
+    </div>
+    <div class="edu__item">
+      <span class="edu__degree">Bachelor of Science in Information Technology</span>
+      <span class="edu__school">University of Phoenix</span>
+    </div>
+    <div class="edu__item">
+      <span class="edu__degree">Bachelor of Science in Mathematics</span>
+      <span class="edu__school">University of the Punjab</span>
+    </div>
+    <div class="edu__item">
+      <span class="edu__degree">Instructional Leadership Certificate</span>
+      <span class="edu__school">Harvard Graduate School of Education</span>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS & ACHIEVEMENTS -->
+  <section class="section">
+    <h2 class="section__title">Publications &amp; Achievements</h2>
+    <ul class="achievements__list">
+      <li><strong>Author:</strong> <em>Mastering Excellence: A Guide to Becoming a Distinguished Teacher</em> (Amazon, 2024)</li>
+      <li><strong>Expert Appointment:</strong> Teacher Excellence Initiative (TEI) Campus Expert</li>
+      <li><strong>Honor Recognition:</strong> Member of the Honor Society, USA</li>
+    </ul>
+  </section>
+
+</body>
+</html>
