@@ -63,31 +63,38 @@
       </ul>
     </nav>
     <header class="header">
-      <div class="header__content">
-        <h1 class="title">Hey</h1>
-        <h1 class="title orange">I'm Zenab.</h1>
-        <p class="header__para">
-          I'm a <b class="orange">Frontend Web Developer</b> with a passion for building user-centric
-          applications and delivering seamless digital experiences.
-          <br>
-          Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
-        </p>
-        <div class="social__list">
-          <a href="https://www.linkedin.com/in/zenab-waqi" target="_blank" class="social__link click">
-            <!-- <i class="fab fa-linkedin-in"></i> -->
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/zeevaki" target="_blank" class="social__link click">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="./assets/Zenab_Waqi_Resume.pdf" target="_blank" class="social__link click">
-            <i class="fas fa-file-pdf"></i>
+      <div class="header__inner">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title orange">I'm Zenab.</h1>
+          <p class="header__para">
+            I'm a <b class="orange">Frontend Web Developer</b> with a passion for building user-centric
+            applications and delivering seamless digital experiences.
+            <br>
+            Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
+          </p>
+          <div class="social__list">
+            <a href="https://www.linkedin.com/in/zenab-waqi" target="_blank" class="social__link click">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/zeevaki" target="_blank" class="social__link click">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="./assets/Zenab_Waqi_Resume.pdf" target="_blank" class="social__link click">
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
+          <a href="./assets/Zenab_Waqi_Resume.pdf" target="_blank" class="resume__cta click">
+            <i class="fas fa-file-download"></i>
+            Download Resume
           </a>
         </div>
-        <a href="./assets/Zenab_Waqi_Resume.pdf" target="_blank" class="resume__cta click">
-          <i class="fas fa-file-download"></i>
-          Download Resume
-        </a>
+        <div class="header__photo-wrap">
+          <div class="header__photo-ring">
+            <img src="./assets/profile.jpg" alt="Zenab Waqi" class="header__photo"
+              onerror="this.parentNode.innerHTML='<div class=\'header__photo-initials\'>ZW</div>'" />
+          </div>
+        </div>
       </div>
     </header>
     <a href="#">
@@ -294,22 +301,73 @@
           </li>
           <li class="project">
             <div class="project__wrapper">
-              <img src="./assets/urdu poetry mockup.png" class="project__img" alt="Urdu Poetry">
+              <div class="project__img project__mockup project__mockup--junoon">
+                <div class="mockup__content">
+                  <div class="mockup__urdu">جنونِ عشق</div>
+                  <div class="mockup__name">Junoon-e-Ishq</div>
+                  <div class="mockup__sub">Urdu Poetry · Ghazals · Qawalis · Books</div>
+                </div>
+              </div>
               <div class="project__wrapper--bg"></div>
               <div class="project__description">
-                <h3 class="project__description--title">Urdu Poetry</h3>
+                <h3 class="project__description--title">Junoon-e-Ishq</h3>
                 <div class="project__description--tags">
-                  <span class="project__description--tag">React</span>
-                  <span class="project__description--tag">CSS</span>
-                  <span class="project__description--tag">JavaScript</span>
+                  <span class="project__description--tag">Vite + React</span>
+                  <span class="project__description--tag">Google Books API</span>
+                  <span class="project__description--tag">YouTube API</span>
+                  <span class="project__description--tag">Context API</span>
                 </div>
                 <p class="project__description--para">
-                  A digital platform celebrating Urdu literary and musical traditions. Browse curated
-                  collections of poetry books, classical ghazals, and devotional qawalis in a clean,
-                  elegant interface.
+                  A fully custom Urdu poetry discovery platform with live API integrations,
+                  animated design system, shopping cart, and streaming ghazals, qawalis & poetry reels.
                 </p>
                 <div class="project__description--links">
-                  <a href="https://urdu-poetry-nu.vercel.app/" target="_blank" class="project__description--link" title="Live Site">
+                  <a href="https://junoon-e-ishq.com" target="_blank" class="project__description--link" title="Live Site">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="https://github.com/zeevaki/urdu_poetry" target="_blank" class="project__description--link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="project">
+            <div class="project__wrapper">
+              <div class="project__img project__mockup project__mockup--ourworld">
+                <div class="mockup__content">
+                  <div class="mockup__name">The OurWorld Family</div>
+                  <div class="mockup__sub">4 Live Educational Platforms · Solo Built</div>
+                  <div class="mockup__sites">
+                    <span>ourreadingworld.com</span>
+                    <span>ourmathworld.com</span>
+                    <span>ourteachingworld.com</span>
+                    <span>oursufiworld.com</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">OurWorld Family</h3>
+                <div class="project__description--tags">
+                  <span class="project__description--tag">Next.js 16</span>
+                  <span class="project__description--tag">TypeScript</span>
+                  <span class="project__description--tag">Tailwind CSS</span>
+                  <span class="project__description--tag">Vercel</span>
+                </div>
+                <p class="project__description--para">
+                  A connected family of four Next.js educational sites — reading, math, teaching,
+                  and Sufi wisdom — sharing one design system, built solo, with 173K+ combined social followers.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://ourreadingworld.com" target="_blank" class="project__description--link" title="OurReadingWorld">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="https://ourmathworld.com" target="_blank" class="project__description--link" title="OurMathWorld">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a href="https://oursufiworld.com" target="_blank" class="project__description--link" title="OurSufiWorld">
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
