@@ -859,6 +859,10 @@ footer {
   background: linear-gradient(135deg, #022C22 0%, #065F46 55%, #0D9488 100%);
 }
 
+.project__mockup--chaabi {
+  background: linear-gradient(135deg, #07011a 0%, #120229 50%, #1e0840 100%);
+}
+
 .mockup__content {
   padding: 32px;
 }
