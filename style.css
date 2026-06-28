@@ -904,6 +904,94 @@ footer {
   border-radius: 20px;
 }
 
+/* ── CATEGORY CARDS ── */
+
+.category__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.category__card {
+  padding: 40px 32px;
+  border-radius: 16px;
+  border: 2px solid #e0e0e0;
+  cursor: pointer;
+  transition: all 300ms ease;
+  text-align: center;
+  background: white;
+}
+
+.dark-theme .category__card {
+  background: #333;
+  border-color: #444;
+}
+
+.category__card:hover,
+.category__card.active {
+  border-color: #f06449;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(240, 100, 73, 0.2);
+}
+
+.category__card.active .category__icon,
+.category__card.active .category__name {
+  color: #f06449;
+}
+
+.category__icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+  color: #242424;
+  display: block;
+  transition: color 300ms ease;
+}
+
+.dark-theme .category__icon {
+  color: white;
+}
+
+.category__name {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 8px;
+  color: #242424;
+  transition: color 300ms ease;
+}
+
+.dark-theme .category__name {
+  color: white;
+}
+
+.category__desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.dark-theme .category__desc {
+  color: #aaa;
+}
+
+.category__count {
+  display: inline-block;
+  background: #f06449;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+/* ── PAKISTANI WOMEN MOCKUP ── */
+
+.project__mockup--pkwomen {
+  background: linear-gradient(135deg, #0D3B2E 0%, #1a5c45 55%, #145a32 100%);
+}
+
 /* Small phones, tablets, large smart phones */
 @media (max-width: 768px) {
   .header__inner { flex-direction: column-reverse; gap: 30px; text-align: center; }
@@ -914,6 +1002,9 @@ footer {
   }
   .header__para {
     font-size: 20px;
+  }
+  .category__grid {
+    grid-template-columns: 1fr;
   }
   .modal {
     top: 0;

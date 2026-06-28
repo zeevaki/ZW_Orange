@@ -49,6 +49,24 @@ function contact(event) {
     });
 }
 
+function filterProjects(category) {
+  const cards = document.querySelectorAll('.category__card');
+  const projects = document.querySelectorAll('#projects .project');
+  const clickedCard = document.querySelector(`.category__card[data-filter="${category}"]`);
+  const isAlreadyActive = clickedCard.classList.contains('active');
+
+  cards.forEach(card => card.classList.remove('active'));
+
+  if (isAlreadyActive) {
+    projects.forEach(p => p.style.display = '');
+  } else {
+    clickedCard.classList.add('active');
+    projects.forEach(p => {
+      p.style.display = p.dataset.category === category ? '' : 'none';
+    });
+  }
+}
+
 function toggleModal() {
   if (isModalOpen) {
     isModalOpen = false;

@@ -198,8 +198,63 @@
         <h1 class="section__title">
           Here are some of my <span class="orange">projects</span>
         </h1>
+        <div class="category__grid">
+          <div class="category__card" data-filter="women" onclick="filterProjects('women')">
+            <i class="fas fa-venus category__icon"></i>
+            <h3 class="category__name">Women</h3>
+            <p class="category__desc">Celebrating Pakistani women who shaped history</p>
+            <span class="category__count">1 project</span>
+          </div>
+          <div class="category__card" data-filter="social" onclick="filterProjects('social')">
+            <i class="fas fa-hand-holding-heart category__icon"></i>
+            <h3 class="category__name">Social Causes</h3>
+            <p class="category__desc">Culture, language, and community platforms</p>
+            <span class="category__count">1 project</span>
+          </div>
+          <div class="category__card" data-filter="education" onclick="filterProjects('education')">
+            <i class="fas fa-graduation-cap category__icon"></i>
+            <h3 class="category__name">Education</h3>
+            <p class="category__desc">Learning platforms and knowledge tools</p>
+            <span class="category__count">3 projects</span>
+          </div>
+          <div class="category__card" data-filter="business" onclick="filterProjects('business')">
+            <i class="fas fa-briefcase category__icon"></i>
+            <h3 class="category__name">Business</h3>
+            <p class="category__desc">Apps, marketplaces, and digital products</p>
+            <span class="category__count">4 projects</span>
+          </div>
+        </div>
+
         <ul class="project__list">
-          <li class="project">
+          <li class="project" data-category="women">
+            <div class="project__wrapper">
+              <div class="project__img project__mockup project__mockup--pkwomen">
+                <div class="mockup__content">
+                  <div class="mockup__urdu">پاکستانی خواتین</div>
+                  <div class="mockup__name">Inspiring Pakistani Women</div>
+                  <div class="mockup__sub">History · Legacy · Impact</div>
+                </div>
+              </div>
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">Pakistani Women</h3>
+                <div class="project__description--tags">
+                  <span class="project__description--tag">React</span>
+                  <span class="project__description--tag">Vite</span>
+                  <span class="project__description--tag">CSS</span>
+                </div>
+                <p class="project__description--para">
+                  A tribute site profiling four extraordinary Pakistani women — Benazir Bhutto, Parveen Shakir, Roohi Bano, and Asma Jahangir — who shaped history across politics, poetry, performance, and law.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/zeevaki/inspiringpakistaniwomen" target="_blank" class="project__description--link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project" data-category="business">
             <div class="project__wrapper">
               <img src="./assets/skinstric mockup.png" class="project__img" alt="Skinstric">
               <div class="project__wrapper--bg"></div>
@@ -224,7 +279,7 @@
               </div>
             </div>
           </li>
-          <li class="project">
+          <li class="project" data-category="education">
             <div class="project__wrapper">
               <img src="./assets/summerbooks mockup.png" class="project__img" alt="Summarist">
               <div class="project__wrapper--bg"></div>
@@ -247,7 +302,7 @@
               </div>
             </div>
           </li>
-          <li class="project">
+          <li class="project" data-category="business">
             <div class="project__wrapper">
               <img src="./assets/ultraverse mockup.png" class="project__img" alt="Ultraverse">
               <div class="project__wrapper--bg"></div>
@@ -270,7 +325,7 @@
               </div>
             </div>
           </li>
-          <li class="project">
+          <li class="project" data-category="education">
             <div class="project__wrapper">
               <img src="./assets/library mockup.png" class="project__img" alt="React Library">
               <div class="project__wrapper--bg"></div>
@@ -293,7 +348,7 @@
               </div>
             </div>
           </li>
-          <li class="project">
+          <li class="project" data-category="social">
             <div class="project__wrapper">
               <div class="project__img project__mockup project__mockup--junoon">
                 <div class="mockup__content">
@@ -327,7 +382,7 @@
             </div>
           </li>
 
-          <li class="project">
+          <li class="project" data-category="education">
             <div class="project__wrapper">
               <div class="project__img project__mockup project__mockup--ourworld">
                 <div class="mockup__content">
@@ -368,7 +423,7 @@
               </div>
             </div>
           </li>
-          <li class="project">
+          <li class="project" data-category="business">
             <div class="project__wrapper">
               <div class="project__img project__mockup" style="background:linear-gradient(135deg,#4C1D95,#7C3AED);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
                 <div class="mockup__content" style="text-align:center;">
@@ -399,7 +454,7 @@
             </div>
           </li>
 
-          <li class="project">
+          <li class="project" data-category="business">
             <div class="project__wrapper">
               <div class="project__img project__mockup" style="background:linear-gradient(135deg,#1E3A8A,#2563EB);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
                 <div class="mockup__content" style="text-align:center;">
