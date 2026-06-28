@@ -199,293 +199,31 @@
           Here are some of my <span class="orange">projects</span>
         </h1>
         <div class="category__grid">
-          <div class="category__card" data-filter="women" onclick="filterProjects('women')">
+          <a href="women.html" class="category__card">
             <i class="fas fa-venus category__icon"></i>
             <h3 class="category__name">Women</h3>
             <p class="category__desc">Celebrating Pakistani women who shaped history</p>
             <span class="category__count">1 project</span>
-          </div>
-          <div class="category__card" data-filter="social" onclick="filterProjects('social')">
+          </a>
+          <a href="social.html" class="category__card">
             <i class="fas fa-hand-holding-heart category__icon"></i>
             <h3 class="category__name">Social Causes</h3>
             <p class="category__desc">Culture, language, and community platforms</p>
             <span class="category__count">1 project</span>
-          </div>
-          <div class="category__card" data-filter="education" onclick="filterProjects('education')">
+          </a>
+          <a href="education.html" class="category__card">
             <i class="fas fa-graduation-cap category__icon"></i>
             <h3 class="category__name">Education</h3>
             <p class="category__desc">Learning platforms and knowledge tools</p>
             <span class="category__count">3 projects</span>
-          </div>
-          <div class="category__card" data-filter="business" onclick="filterProjects('business')">
+          </a>
+          <a href="business.html" class="category__card">
             <i class="fas fa-briefcase category__icon"></i>
             <h3 class="category__name">Business</h3>
             <p class="category__desc">Apps, marketplaces, and digital products</p>
             <span class="category__count">4 projects</span>
-          </div>
+          </a>
         </div>
-
-        <ul class="project__list">
-          <li class="project" data-category="women">
-            <div class="project__wrapper">
-              <div class="project__img project__mockup project__mockup--pkwomen">
-                <div class="mockup__content">
-                  <div class="mockup__urdu">پاکستانی خواتین</div>
-                  <div class="mockup__name">Inspiring Pakistani Women</div>
-                  <div class="mockup__sub">History · Legacy · Impact</div>
-                </div>
-              </div>
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">Pakistani Women</h3>
-                <div class="project__description--tags">
-                  <span class="project__description--tag">React</span>
-                  <span class="project__description--tag">Vite</span>
-                  <span class="project__description--tag">CSS</span>
-                </div>
-                <p class="project__description--para">
-                  A tribute site profiling four extraordinary Pakistani women — Benazir Bhutto, Parveen Shakir, Roohi Bano, and Asma Jahangir — who shaped history across politics, poetry, performance, and law.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/zeevaki/inspiringpakistaniwomen" target="_blank" class="project__description--link" title="GitHub">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="project" data-category="business">
-            <div class="project__wrapper">
-              <img src="./assets/skinstric mockup.png" class="project__img" alt="Skinstric">
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">Skinstric</h3>
-                <div class="project__description--tags">
-                  <span class="project__description--tag">React</span>
-                  <span class="project__description--tag">Next.js</span>
-                  <span class="project__description--tag">CSS</span>
-                  <span class="project__description--tag">AI</span>
-                </div>
-                <p class="project__description--para">
-                  An AI-powered skincare personalization platform that analyzes individual skin needs and
-                  generates a highly tailored routine. Features a sleek, interactive UI with a guided
-                  skin assessment flow.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://skinstric-rouge.vercel.app/" target="_blank" class="project__description--link" title="Live Site">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="project" data-category="education">
-            <div class="project__wrapper">
-              <img src="./assets/summerbooks mockup.png" class="project__img" alt="Summarist">
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">Summarist</h3>
-                <div class="project__description--tags">
-                  <span class="project__description--tag">React</span>
-                  <span class="project__description--tag">Next.js</span>
-                  <span class="project__description--tag">CSS</span>
-                </div>
-                <p class="project__description--para">
-                  A book summary platform that lets users read or listen to condensed versions of popular titles.
-                  Features personalized recommendations, audio briefcasts, and a clean cross-platform reading experience.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://summerbooks.vercel.app/" target="_blank" class="project__description--link" title="Live Site">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="project" data-category="business">
-            <div class="project__wrapper">
-              <img src="./assets/ultraverse mockup.png" class="project__img" alt="Ultraverse">
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">Ultraverse</h3>
-                <div class="project__description--tags">
-                  <span class="project__description--tag">React</span>
-                  <span class="project__description--tag">Next.js</span>
-                  <span class="project__description--tag">CSS</span>
-                </div>
-                <p class="project__description--para">
-                  A modern NFT marketplace with a sleek, responsive interface. Browse trending collections,
-                  explore top creators, and discover digital assets through a polished and intuitive UI.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://zenab-insternship-vwo5.vercel.app/" target="_blank" class="project__description--link" title="Live Site">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="project" data-category="education">
-            <div class="project__wrapper">
-              <img src="./assets/library mockup.png" class="project__img" alt="React Library">
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">Library</h3>
-                <div class="project__description--tags">
-                  <span class="project__description--tag">React</span>
-                  <span class="project__description--tag">CSS</span>
-                  <span class="project__description--tag">JavaScript</span>
-                </div>
-                <p class="project__description--para">
-                  A React-powered digital library application for browsing, organizing, and discovering books.
-                  Built with a clean, intuitive interface and a strong focus on responsive design.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://react-library-blush.vercel.app/" target="_blank" class="project__description--link" title="Live Site">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="project" data-category="social">
-            <div class="project__wrapper">
-              <div class="project__img project__mockup project__mockup--junoon">
-                <div class="mockup__content">
-                  <div class="mockup__urdu">جنونِ عشق</div>
-                  <div class="mockup__name">Junoon-e-Ishq</div>
-                  <div class="mockup__sub">Urdu Poetry · Ghazals · Qawalis · Books</div>
-                </div>
-              </div>
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">Junoon-e-Ishq</h3>
-                <div class="project__description--tags">
-                  <span class="project__description--tag">Vite + React</span>
-                  <span class="project__description--tag">Google Books API</span>
-                  <span class="project__description--tag">YouTube API</span>
-                  <span class="project__description--tag">Context API</span>
-                </div>
-                <p class="project__description--para">
-                  A fully custom Urdu poetry discovery platform with live API integrations,
-                  animated design system, shopping cart, and streaming ghazals, qawalis & poetry reels.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://junoon-e-ishq.com" target="_blank" class="project__description--link" title="Live Site">
-                    <i class="fas fa-link"></i>
-                  </a>
-                  <a href="https://github.com/zeevaki/urdu_poetry" target="_blank" class="project__description--link" title="GitHub">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="project" data-category="education">
-            <div class="project__wrapper">
-              <div class="project__img project__mockup project__mockup--ourworld">
-                <div class="mockup__content">
-                  <div class="mockup__name">The OurWorld Family</div>
-                  <div class="mockup__sub">4 Live Educational Platforms · Solo Built</div>
-                  <div class="mockup__sites">
-                    <span>ourreadingworld.com</span>
-                    <span>ourmathworld.com</span>
-                    <span>ourteachingworld.com</span>
-                    <span>oursufiworld.com</span>
-                  </div>
-                </div>
-              </div>
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">OurWorld Family</h3>
-                <div class="project__description--tags">
-                  <span class="project__description--tag">Next.js 16</span>
-                  <span class="project__description--tag">TypeScript</span>
-                  <span class="project__description--tag">Tailwind CSS</span>
-                  <span class="project__description--tag">Vercel</span>
-                </div>
-                <p class="project__description--para">
-                  A connected family of four Next.js educational sites — reading, math, teaching,
-                  and Sufi wisdom — sharing one design system, built solo, with 173K+ combined social followers.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://ourreadingworld.com" target="_blank" class="project__description--link" title="OurReadingWorld">
-                    <i class="fas fa-link"></i>
-                  </a>
-                  <a href="https://ourmathworld.com" target="_blank" class="project__description--link" title="OurMathWorld">
-                    <i class="fas fa-link"></i>
-                  </a>
-                  <a href="https://oursufiworld.com" target="_blank" class="project__description--link" title="OurSufiWorld">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="project" data-category="business">
-            <div class="project__wrapper">
-              <div class="project__img project__mockup" style="background:linear-gradient(135deg,#4C1D95,#7C3AED);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
-                <div class="mockup__content" style="text-align:center;">
-                  <div style="font-size:2.5rem;">🎵</div>
-                  <div class="mockup__name">Moodify</div>
-                  <div class="mockup__sub">Express API · React · Mood History</div>
-                </div>
-              </div>
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">Moodify</h3>
-                <div class="project__description--tags">
-                  <span class="project__description--tag">Node.js</span>
-                  <span class="project__description--tag">Express</span>
-                  <span class="project__description--tag">React</span>
-                  <span class="project__description--tag">Full Stack</span>
-                </div>
-                <p class="project__description--para">
-                  A full-stack mood-to-playlist app. Express backend saves mood history;
-                  React frontend fetches and displays playlists. Built from scratch — raw Node.js http module first, then upgraded to Express.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/zeevaki/moodify" target="_blank" class="project__description--link" title="GitHub">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="project" data-category="business">
-            <div class="project__wrapper">
-              <div class="project__img project__mockup" style="background:linear-gradient(135deg,#1E3A8A,#2563EB);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
-                <div class="mockup__content" style="text-align:center;">
-                  <div style="font-size:2.5rem;">🌤️</div>
-                  <div class="mockup__name">Weatherly</div>
-                  <div class="mockup__sub">OpenWeatherMap API · Express Proxy · React</div>
-                </div>
-              </div>
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">Weatherly</h3>
-                <div class="project__description--tags">
-                  <span class="project__description--tag">Node.js</span>
-                  <span class="project__description--tag">Express</span>
-                  <span class="project__description--tag">React</span>
-                  <span class="project__description--tag">REST API</span>
-                </div>
-                <p class="project__description--para">
-                  A full-stack weather app. Express backend proxies the OpenWeatherMap API —
-                  keeping the API key off the browser. React frontend with live city search, temperature, humidity, and wind.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/zeevaki/weatherly" target="_blank" class="project__description--link" title="GitHub">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-
-        </ul>
       </div>
     </div>
   </section>

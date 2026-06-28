@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women Projects – Zenab Waqi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/assets/gemini-svg.svg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){ emailjs.init({ publicKey: "URaLON_8OTzDkIS1D" }); })();
+  </script>
+  <style>.modal { position: fixed; }</style>
+</head>
+<body>
+  <nav class="cat-nav">
+    <figure>
+      <a href="index.html"><img id="personal-logo" src="./assets/profile.jpg" alt="Zenab Waqi"></a>
+    </figure>
+    <ul class="nav__link--list">
+      <li class="nav__link" onclick="toggleModal()">
+        <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
+      </li>
+      <li class="nav__link">
+        <a href="index.html#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
+      </li>
+      <li class="nav__link" onclick="toggleModal()">
+        <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
+      </li>
+      <li class="nav__link click" onclick="toggleContrast()">
+        <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i class="fas fa-adjust"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="modal">
+    <div class="modal__half modal__about">
+      <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+      <h4 class="modal__sub-title modal__sub-title--about">Full Stack Developer.</h4>
+      <p class="modal__para">
+        Analytical and detail-oriented <b class="orange">Full Stack Developer</b> with a background in
+        Information Technology and expertise in mathematical logic and instructional design. Proven track record
+        of building user-centric applications, managing technical deployments, and scaling digital communities
+        to over <b class="orange">80,000+ active followers</b>.
+      </p>
+      <div class="modal__languages">
+        <figure class="modal__language">
+          <img class="modal__language--img" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5">
+          <span class="language__name">HTML</span>
+        </figure>
+        <figure class="modal__language">
+          <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS">
+          <span class="language__name">CSS</span>
+        </figure>
+        <figure class="modal__language">
+          <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JS">
+          <span class="language__name">JavaScript</span>
+        </figure>
+        <figure class="modal__language">
+          <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React">
+          <span class="language__name">React</span>
+        </figure>
+        <figure class="modal__language">
+          <img class="modal__language--img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js">
+          <span class="language__name">Node.js</span>
+        </figure>
+        <figure class="modal__language">
+          <img class="modal__language--img" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg" alt="Firebase">
+          <span class="language__name">Firebase</span>
+        </figure>
+      </div>
+    </div>
+    <div class="modal__half modal__contact">
+      <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+      <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+      <h3 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h3>
+      <form id="contact__form" onsubmit="contact(event)">
+        <div class="form__item">
+          <label class="form__item--label">Name</label>
+          <input class="input" name="user_name" type="text" required>
+        </div>
+        <div class="form__item">
+          <label class="form__item--label">Email</label>
+          <input class="input" name="user_email" type="email" required>
+        </div>
+        <div class="form__item">
+          <label class="form__item--label">Message</label>
+          <textarea class="input" name="message" required></textarea>
+        </div>
+        <button id="contact__submit" class="form__submit">Send it my way</button>
+      </form>
+      <div class="modal__overlay modal__overlay--loading"><i class="fas fa-spinner"></i></div>
+      <div class="modal__overlay modal__overlay--success">Thanks for the message! Looking forward to speaking to you soon.</div>
+    </div>
+  </div>
+
+  <button class="mail__btn click" onclick="toggleModal()"><i class="fas fa-envelope"></i></button>
+
+  <section class="cat-section">
+    <div class="container">
+      <div class="row">
+        <a href="index.html#projects" class="back-link">
+          <i class="fas fa-arrow-left"></i> All Categories
+        </a>
+        <h1 class="section__title">Women <span class="orange">Projects</span></h1>
+        <ul class="project__list">
+
+          <li class="project">
+            <div class="project__wrapper">
+              <div class="project__img project__mockup project__mockup--pkwomen">
+                <div class="mockup__content">
+                  <div class="mockup__urdu">پاکستانی خواتین</div>
+                  <div class="mockup__name">Inspiring Pakistani Women</div>
+                  <div class="mockup__sub">History · Legacy · Impact</div>
+                </div>
+              </div>
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">Pakistani Women</h3>
+                <div class="project__description--tags">
+                  <span class="project__description--tag">React</span>
+                  <span class="project__description--tag">Vite</span>
+                  <span class="project__description--tag">CSS</span>
+                </div>
+                <p class="project__description--para">
+                  A tribute site profiling four extraordinary Pakistani women — Benazir Bhutto, Parveen Shakir, Roohi Bano, and Asma Jahangir — who shaped history across politics, poetry, performance, and law.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/zeevaki/inspiringpakistaniwomen" target="_blank" class="project__description--link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <a href="index.html" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="./assets/profile.jpg" class="footer__logo--img" alt="Zenab Waqi">
+          </figure>
+          <span class="footer__logo--popper">Top <i class="fas fa-arrow-up"></i></span>
+        </a>
+        <div class="footer__social--list">
+          <a href="https://www.linkedin.com/in/zenab-waqi" target="_blank" class="footer__social--link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/zeevaki" target="_blank" class="footer__social--link" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/zenab.waqi" target="_blank" class="footer__social--link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/zenab_waqi/" target="_blank" class="footer__social--link" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" onclick="toggleModal()" class="footer__social--link" title="Contact"><i class="fas fa-envelope"></i></a>
+          <a href="./resume.html" target="_blank" class="footer__social--link" title="Resume"><i class="fas fa-file-pdf"></i></a>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2026 Zenab Waqi</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

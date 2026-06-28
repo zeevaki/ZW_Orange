@@ -921,6 +921,9 @@ footer {
   transition: all 300ms ease;
   text-align: center;
   background: white;
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .dark-theme .category__card {
@@ -990,6 +993,64 @@ footer {
 
 .project__mockup--pkwomen {
   background: linear-gradient(135deg, #0D3B2E 0%, #1a5c45 55%, #145a32 100%);
+}
+
+/* ── CATEGORY PAGES ── */
+
+.cat-nav {
+  background-color: rgb(245, 245, 245);
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100px;
+}
+
+.dark-theme .cat-nav {
+  background-color: #242424;
+  border-bottom-color: #333;
+}
+
+.cat-section {
+  background-color: rgb(245, 245, 245);
+  min-height: 100vh;
+}
+
+.dark-theme .cat-section {
+  background-color: #242424;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #242424;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 40px;
+  transition: color 300ms ease;
+}
+
+.back-link:hover {
+  color: #f06449;
+}
+
+.dark-theme .back-link {
+  color: white;
+}
+
+.dark-theme .back-link:hover {
+  color: #f06449;
 }
 
 /* Small phones, tablets, large smart phones */
