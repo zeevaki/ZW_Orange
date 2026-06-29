@@ -993,6 +993,49 @@ footer {
   letter-spacing: 1px;
 }
 
+/* ── AMAANAH MOCKUP ── */
+
+.project__mockup--amaanah {
+  background: linear-gradient(135deg, #0e0c09 0%, #1a1208 50%, #2a1e0a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.project__mockup--amaanah::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(200,149,42,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.mockup__amaanah-title {
+  font-size: 42px;
+  font-weight: 900;
+  color: #c8952a;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.mockup__amaanah-sub {
+  font-size: 11px;
+  color: rgba(200,149,42,0.5);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.mockup__amaanah-quote {
+  font-size: 13px;
+  font-style: italic;
+  color: rgba(245,240,232,0.5);
+  line-height: 1.6;
+}
+
 /* ── PAKISTANI WOMEN MOCKUP ── */
 
 .project__mockup--pkwomen {
