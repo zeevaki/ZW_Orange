@@ -993,6 +993,12 @@ footer {
   letter-spacing: 1px;
 }
 
+/* ── OURSUFI MOCKUP ── */
+
+.project__mockup--oursufi {
+  background: linear-gradient(135deg, #0a0114 0%, #1a0a2e 50%, #2d1155 100%);
+}
+
 /* ── AMAANAH MOCKUP ── */
 
 .project__mockup--amaanah {
