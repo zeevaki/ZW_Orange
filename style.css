@@ -1005,6 +1005,12 @@ footer {
   background: linear-gradient(135deg, #641E26 0%, #171A2B 55%, #8C6425 100%);
 }
 
+/* ── SASSY SCIENCE MOCKUP ── */
+
+.project__mockup--sassyscience {
+  background: linear-gradient(135deg, #FF2E7E 0%, #9B5DE5 55%, #00C2B8 100%);
+}
+
 /* ── AMAANAH MOCKUP ── */
 
 .project__mockup--amaanah {
