@@ -999,6 +999,12 @@ footer {
   background: linear-gradient(135deg, #0a0114 0%, #1a0a2e 50%, #2d1155 100%);
 }
 
+/* ── RAH-E-ISHQ MOCKUP ── */
+
+.project__mockup--raheishq {
+  background: linear-gradient(135deg, #641E26 0%, #171A2B 55%, #8C6425 100%);
+}
+
 /* ── AMAANAH MOCKUP ── */
 
 .project__mockup--amaanah {
